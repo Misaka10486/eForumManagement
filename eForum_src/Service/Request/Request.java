@@ -1,13 +1,11 @@
 package Service.Request;
 
-/* ClassName:
- *     Request
- * Description:
- *     ${描述}
- * Date:
- *     2022/8/13
- */
-public abstract class Request {
+import java.io.Serial;
+import java.io.Serializable;
+
+public abstract class Request implements Serializable {
+    @Serial
+    private static final long serialVersionUID = 4050832002033364013L;
     public final String requestType;
 
     public Request(String requestType) {

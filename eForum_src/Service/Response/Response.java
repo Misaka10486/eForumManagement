@@ -1,14 +1,12 @@
 package Service.Response;
 
-/* ClassName:
- *     Response
- * Description:
- *     ${描述}
- * Date:
- *     2022/8/13
- */
-public abstract class Response {
-    private final String information;
+import java.io.Serial;
+import java.io.Serializable;
+
+public abstract class Response implements Serializable {
+    @Serial
+    private static final long serialVersionUID = 8277472087127032200L;
+    protected final String information;
 
     protected Response(String information) {
         this.information = information;

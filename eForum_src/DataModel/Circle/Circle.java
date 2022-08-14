@@ -1,5 +1,8 @@
 package DataModel.Circle;
 
+import java.io.Serial;
+import java.io.Serializable;
+
 /* ClassName:
  *     Circle
  * Description:
@@ -7,7 +10,9 @@ package DataModel.Circle;
  * Date:
  *     2022/8/9
  */
-public class Circle {
+public class Circle implements Serializable {
+    @Serial
+    private static final long serialVersionUID = 2615885473391020337L;
     private final int ID;
     private String name;
     private String introduction;

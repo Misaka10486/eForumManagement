@@ -1,5 +1,8 @@
 package DataModel.User;
 
+import java.io.Serial;
+import java.io.Serializable;
+
 /* ClassName:
  *     User
  * Description:
@@ -7,7 +10,9 @@ package DataModel.User;
  * Date:
  *     2022/8/9
  */
-public class User {
+public class User implements Serializable {
+    @Serial
+    private static final long serialVersionUID = 1958123660687909786L;
     private String name;
     private int ID;
     private String password;

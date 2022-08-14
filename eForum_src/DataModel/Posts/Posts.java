@@ -1,5 +1,8 @@
 package DataModel.Posts;
 
+import java.io.Serial;
+import java.io.Serializable;
+
 import DataModel.Circle.Circle;
 import DataModel.Topic.Topic;
 import DataModel.User.User;
@@ -11,7 +14,9 @@ import DataModel.User.User;
  * Date:
  *     2022/8/9
  */
-public class Posts {
+public class Posts implements Serializable {
+    @Serial
+    private static final long serialVersionUID = 2936024254186575048L;
     private User user;
     private Circle circle;
     private Topic topic;
